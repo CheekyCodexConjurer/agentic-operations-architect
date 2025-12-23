@@ -11,3 +11,4 @@ Use `PLANS.md` for multi-hour tasks, risky refactors, or broad changes.
 - Define objective, constraints, and verification upfront.
 - Track progress and evidence.
 - Update the plan as reality changes.
+- Link to `IMPACT.md` for high-risk changes.

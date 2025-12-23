@@ -20,6 +20,11 @@
 - safe_refactor_migration
 - handoff_writer
 - backlog_curator
+- context_compactor
+- command_guard
+- quality_gates
+- repo_indexer
+- impact_analyzer
 
 ## Notes
 - See `.codex/skills/` for Codex-native skill definitions.

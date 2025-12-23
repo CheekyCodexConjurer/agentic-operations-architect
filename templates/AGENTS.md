@@ -61,6 +61,10 @@ Simulation -> Run -> Self-Correct Loop
 - Maintain `.agent-docs/memory/HANDOFF.md` for session resets.
 - Maintain `.agent-docs/memory/BACKLOG.md` for high-value follow-ups.
 
+## Context Compaction
+- Periodically compact `AUTO_CONTEXT.md` into `HANDOFF.md`.
+- Archive completed task context to keep files small.
+
 ## Architecture Mapping Protocol
 - Inventory entrypoints and major components.
 - Map dependencies and interactions across files and services.
@@ -71,6 +75,7 @@ Simulation -> Run -> Self-Correct Loop
 - Respect `.agentignore` forbidden zones without exception.
 - Validate planned changes against safety rules before commit.
 - Prefer non-destructive changes and reversible steps.
+- Enforce `.agentpolicy` for command safety.
 
 ## Decision Memory
 - For major architectural changes, write an ADR:
@@ -85,6 +90,10 @@ Simulation -> Run -> Self-Correct Loop
 ## Commands and Manifest
 - Maintain `.agent-docs/memory/COMMANDS.md` and `COMMANDS.json`.
 - Keep `.agent-docs/memory/MANIFEST.yaml` up to date.
+
+## Repo Index and Impact
+- Maintain `.agent-docs/memory/INDEX.md` and `INDEX.json`.
+- Create `.agent-docs/memory/IMPACT.md` before high-risk changes.
 
 ## AST Injection
 - Use AST-aware edits for code changes when possible.
@@ -102,3 +111,7 @@ Simulation -> Run -> Self-Correct Loop
 ## ExecPlan for Long Tasks
 - Use `PLANS.md` for multi-hour or high-risk changes.
 - Track progress and verification explicitly.
+
+## Quality Gates
+- Use `QUALITY_GATES.md` as the Definition of Done.
+- Do not mark work complete without recorded evidence.

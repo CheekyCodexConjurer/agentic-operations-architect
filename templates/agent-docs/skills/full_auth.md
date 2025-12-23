@@ -11,3 +11,4 @@ Use this skill only when the user explicitly authorizes end-to-end execution.
 - Safety validation passed (`.agentignore` respected).
 - Tests/checks/build executed as applicable and recorded.
 - Files changed are listed and summarized.
+- If `QUALITY_GATES.md` exists, follow it.

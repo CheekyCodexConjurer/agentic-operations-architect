@@ -19,6 +19,7 @@ helps the agent recover context after chat resets or long mapping sessions.
 
 ## Handoff Integration
 - Update `.agent-docs/memory/HANDOFF.md` before rotating the task context.
+- Use `context_compactor` when the log grows too large.
 
 ## Content Rules
 - Keep entries short and actionable.

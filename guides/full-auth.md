@@ -11,6 +11,7 @@ the agent to run end-to-end once explicitly authorized.
 ## Requirements
 - The user must explicitly authorize end-to-end execution.
 - The agent must still respect `.agentignore` and safety rules.
+- Follow `.agentpolicy` and `QUALITY_GATES.md`.
 
 ## Output Contract
 - Investigation notes.

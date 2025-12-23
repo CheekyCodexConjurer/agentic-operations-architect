@@ -12,6 +12,7 @@ Record what changed, why, and how it was verified.
 1. Add an entry to `ACTION_LOG.md`.
 2. Mirror the entry in `ACTION_LOG.jsonl`.
 3. Include commands and evidence.
+4. Link to `IMPACT.md` when the change is high risk.
 
 ## Guardrails
 - Keep entries brief and factual.

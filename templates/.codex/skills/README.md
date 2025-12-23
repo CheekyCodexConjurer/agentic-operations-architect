@@ -14,6 +14,11 @@ These skills follow the Codex-native layout:
 - execplan
 - handoff_writer
 - backlog_curator
+- context_compactor
+- command_guard
+- quality_gates
+- repo_indexer
+- impact_analyzer
 - cartographer
 - archaeologist
 - shadow_coder

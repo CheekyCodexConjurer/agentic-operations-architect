@@ -11,4 +11,5 @@ Provide a structured plan and evidence trail for large changes.
 ## Steps
 1. Create or update `PLANS.md`.
 2. Track scope, risks, and verification steps.
-3. Update status as work progresses.
+3. Link `IMPACT.md` for high-risk changes.
+4. Update status as work progresses.

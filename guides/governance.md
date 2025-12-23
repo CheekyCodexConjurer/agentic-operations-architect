@@ -7,6 +7,7 @@ This guide defines safety and quality rules for agent-driven changes.
 - Avoid destructive actions without explicit approval.
 - Keep modifications minimal and reversible.
 - Respect `.agentignore` forbidden zones without exception.
+- Enforce `.agentpolicy` for command safety.
 - Validate modified paths against safety rules before commit.
 - Use Shadow Coder for parallel architecture changes.
 - Use merge protocol when touching existing instructions.
@@ -18,8 +19,11 @@ This guide defines safety and quality rules for agent-driven changes.
 - Keep auto-context short and task-scoped.
 - Update the Action Log for meaningful changes.
 - Record recurring patterns in `PATTERNS.md`.
+- Keep `INDEX.md` current for navigation.
+- Keep `IMPACT.md` current for high-risk changes.
 
 ## Verification
 - Use test-first development when touching behavior.
 - Validate changes with tests or reproducible runs.
 - Log gaps and unknowns instead of guessing.
+- Enforce `QUALITY_GATES.md` before completion.

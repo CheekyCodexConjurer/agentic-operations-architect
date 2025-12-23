@@ -27,6 +27,7 @@ Otherwise, keep going.
   - Prefer `.agent-docs/memory/COMMANDS.json` and `MANIFEST.yaml`.
   - If missing, run capability/command detection and record confidence.
   - Run tests, lint, and build as applicable.
+- If `QUALITY_GATES.md` exists, follow it as the source of truth.
 - Provide a final summary and list all modified/created files.
 
 ## Output Requirements

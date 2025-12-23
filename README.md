@@ -9,11 +9,13 @@ architecture mapping with safe automation.
 1. Copy `templates/AGENTS.md` into your repo root as `AGENTS.md`.
 2. Copy `templates/META_INSTRUCTIONS.md` into your repo root.
 3. Copy `templates/.agentignore` into your repo root.
-4. Copy `templates/ARCHITECTURE.md` into your repo root.
-5. Copy `templates/PLANS.md` into your repo root.
-6. Copy `templates/.codex/skills/` into your repo as `.codex/skills/`.
-7. Copy `templates/agent-docs/` into your repo as `.agent-docs/`.
-8. Follow `guides/bootstrap.md` and `guides/architecture-mapping.md`.
+4. Copy `templates/.agentpolicy` into your repo root.
+5. Copy `templates/QUALITY_GATES.md` into your repo root.
+6. Copy `templates/ARCHITECTURE.md` into your repo root.
+7. Copy `templates/PLANS.md` into your repo root.
+8. Copy `templates/.codex/skills/` into your repo as `.codex/skills/`.
+9. Copy `templates/agent-docs/` into your repo as `.agent-docs/`.
+10. Follow `guides/bootstrap.md` and `guides/architecture-mapping.md`.
 
 ## Repository Layout
 - `guides/`: step-by-step playbooks for bootstrap, mapping, and governance.
@@ -21,6 +23,7 @@ architecture mapping with safe automation.
   `META_INSTRUCTIONS.md`, `.agentignore`, and `.agent-docs/`.
 - `templates/.codex/skills/`: Codex-native skills (`SKILL.md` format).
 - `checklists/`: validation lists for mapping completeness and safety checks.
+- `examples/`: minimal filled-in examples for reference.
 
 ## Recommended Reading Order
 1. `guides/bootstrap.md`
@@ -37,6 +40,11 @@ architecture mapping with safe automation.
 12. `guides/full-auth.md`
 13. `guides/handoff.md`
 14. `guides/backlog.md`
+15. `guides/context-compaction.md`
+16. `guides/command-guard.md`
+17. `guides/quality-gates.md`
+18. `guides/repo-indexer.md`
+19. `guides/impact-analysis.md`
 
 ## Additional Guides
 - `guides/decision-memory.md`
@@ -48,6 +56,7 @@ architecture mapping with safe automation.
 
 ## Core Layers
 - Safety Layer: forbidden zones via `.agentignore` and pre-commit validation.
+- Command Guard: safe command execution via `.agentpolicy`.
 - Trust Layer: test-first changes, auto-debug, and proof of correctness.
 - Decision Memory: ADRs for major architectural choices.
 - Cartography: living architecture maps that stay current.
@@ -57,6 +66,7 @@ architecture mapping with safe automation.
 - ExecPlan: structured planning for large tasks.
 - Handoff: compact continuity snapshot.
 - Backlog: high-value follow-ups and gaps.
+- Quality Gates: Definition of Done with explicit checks.
 
 ## Core Skills
 - Cartographer: builds and updates `ARCHITECTURE.md`.
@@ -65,14 +75,19 @@ architecture mapping with safe automation.
 - Handoff Writer: keeps `HANDOFF.md` up to date.
 - Backlog Curator: maintains follow-ups in `BACKLOG.md`.
 - Full Auth: opt-in end-to-end execution mode.
+- Context Compactor: keeps memory concise for long runs.
+- Command Guard: enforces command safety rules.
+- Quality Gates: enforces Definition of Done.
 
 ## Codex Alignment
 - Root `AGENTS.md` stays minimal with modular overrides.
 - Codex-native skills live in `.codex/skills/`.
 - Merge protocol keeps bootstraps idempotent.
+- `.agentpolicy` and `QUALITY_GATES.md` define safety and completion.
 
 ## What It Enables
 - Safe, repeatable architecture mapping with explicit confidence and gaps.
 - Long-run continuity via task-scoped auto-context files.
 - Evidence-backed changes with tests and ADRs.
 - Idempotent bootstrapping and Codex-native skill activation.
+- Command safety and explicit Definition of Done gates.

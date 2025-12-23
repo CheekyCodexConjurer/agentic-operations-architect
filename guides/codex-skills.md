@@ -10,3 +10,4 @@ YAML frontmatter (`name`, `description`). This repo keeps a dual layer:
 - Copy `templates/.codex/skills/` into the target repo as `.codex/skills/`.
 - Keep skill instructions concise and focused.
 - Use `full_auth` only when explicitly authorized.
+- See `templates/.codex/skills/README.md` for the current skill list.

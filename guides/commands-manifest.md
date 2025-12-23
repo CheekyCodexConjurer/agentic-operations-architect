@@ -12,3 +12,4 @@ repository facts.
 - Record best-known commands with confidence.
 - Prefer verified commands when possible.
 - Update the manifest when entrypoints or tooling change.
+- Use these commands to populate `QUALITY_GATES.md`.

@@ -20,3 +20,5 @@ skills and workflows the agent should activate.
 ## Related Artifacts
 - `COMMANDS.md` / `COMMANDS.json`
 - `MANIFEST.yaml`
+- `INDEX.md` / `INDEX.json`
+- `QUALITY_GATES.md`

@@ -12,3 +12,4 @@ validated. It must be updated for every meaningful change.
 - Keep entries short and factual.
 - Always include verification evidence.
 - Record commands that were executed.
+- Link to `IMPACT.md` when the change is high risk.

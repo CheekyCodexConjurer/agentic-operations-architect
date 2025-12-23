@@ -15,3 +15,4 @@ The goal is to detect existing tooling and adapt, not overwrite.
 - Activate relevant skills and protocols.
 - Flag conflicts between existing conventions and new plans.
 - Update `COMMANDS.md`, `COMMANDS.json`, and `MANIFEST.yaml` when possible.
+- Update `INDEX.md` and `INDEX.json` with entrypoints.

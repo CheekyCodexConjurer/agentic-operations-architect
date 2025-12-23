@@ -7,16 +7,18 @@ and protocols in this repo.
 1. Copy `templates/AGENTS.md` into the target repo root as `AGENTS.md`.
 2. Copy `templates/META_INSTRUCTIONS.md` into the target repo root.
 3. Copy `templates/.agentignore` into the target repo root.
-4. Copy `templates/ARCHITECTURE.md` into the target repo root.
-5. Copy `templates/PLANS.md` into the target repo root.
-6. Copy `templates/.codex/skills/` into the target repo as `.codex/skills/`.
-7. Copy `templates/agent-docs/` into the target repo as `.agent-docs/`.
-8. Fill the architecture index and ADR header with known facts.
-9. Run `analyze_repo_capabilities` and record the manifest.
-10. Start the auto-context file for the current task.
-11. Run the architecture mapping protocol.
-12. Record the bootstrap in the Action Log.
-13. Initialize `HANDOFF.md` and `BACKLOG.md`.
+4. Copy `templates/.agentpolicy` into the target repo root.
+5. Copy `templates/QUALITY_GATES.md` into the target repo root.
+6. Copy `templates/ARCHITECTURE.md` into the target repo root.
+7. Copy `templates/PLANS.md` into the target repo root.
+8. Copy `templates/.codex/skills/` into the target repo as `.codex/skills/`.
+9. Copy `templates/agent-docs/` into the target repo as `.agent-docs/`.
+10. Fill `QUALITY_GATES.md`, the architecture index, and ADR header.
+11. Run `analyze_repo_capabilities` and record the manifest.
+12. Start the auto-context file for the current task.
+13. Run the architecture mapping protocol.
+14. Record the bootstrap in the Action Log.
+15. Initialize `HANDOFF.md`, `BACKLOG.md`, and `INDEX.md`.
 
 ## Safety
 - If `AGENTS.md` or `.agent-docs/` already exist, use merge protocol by default.
