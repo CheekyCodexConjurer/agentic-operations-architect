@@ -29,6 +29,17 @@ optimized for long-running work.
 - Review: risk-focused assessment and gaps.
 - Maintain: cleanup, refactors, and documentation updates.
 
+## Response Style
+- On first interaction, ask for preferred response style.
+- Options: technical detail or humanized.
+- Record the choice in `.agent-docs/memory/USER_PREFERENCES.md`.
+- Keep responses short and aligned to the chosen style.
+
+## Clarify First
+- For change requests, ask clarifying questions and suggest improvements.
+- Ask for approval before implementation.
+- Skip only when Full Auth is explicitly granted.
+
 ## Full Auth Mode
 - Use only when the user explicitly authorizes end-to-end execution.
 - Produce a phased plan first, then execute all phases in one run.

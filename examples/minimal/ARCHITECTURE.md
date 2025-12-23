@@ -1,13 +1,17 @@
-# Architecture Map (Example)
+# Architecture Index (Example)
 
-## L0 System Overview
+## Summary
 - Purpose: Example service for demonstration.
 - Primary users: Internal developers.
 
-## L1 Component Map
-- api/: HTTP handlers and routing.
-- core/: domain logic and services.
-- storage/: persistence adapters.
+## Entrypoints
+- api/
 
-## L2 Critical Flows
-- Create item: api -> core -> storage.
+## Components
+- api/
+- core/
+- storage/
+
+## Detail Links
+- .agent-docs/architecture/overview.md
+- .agent-docs/architecture/interaction-map.md

@@ -21,6 +21,8 @@ governance, proof-driven development, and living architecture maps.
 - ExecPlan: structured planning for long or risky tasks.
 - Quality Gates: explicit Definition of Done checks.
 - Size Guard: line budgets for context-heavy files.
+- Response Style: user-selected output format and brevity.
+- Clarify First: confirmation gate before implementation.
 
 ## Key Artifacts
 - `AGENTS.md`: constitution and protocols.
@@ -50,6 +52,7 @@ governance, proof-driven development, and living architecture maps.
 - `.agent-docs/memory/IMPACT.md`: change impact analysis.
 - `.agent-docs/memory/LINE_BUDGETS.yaml`: size limits for docs.
 - `.agent-docs/memory/SKILLS_STATUS.md`: skill audit log.
+- `.agent-docs/memory/USER_PREFERENCES.md`: response style preference.
 - `.agent-docs/auto-context/AUTO_CONTEXT.md`: task-scoped context log.
 - `.agent-docs/skills/*.md`: skill playbooks for specialized behaviors.
 - `.codex/skills/*/SKILL.md`: Codex-native skill definitions.
@@ -57,22 +60,24 @@ governance, proof-driven development, and living architecture maps.
 ## Interactions and Flow
 1. Bootstrap copies the templates into a target repo.
 2. The agent reads `AGENTS.md` and `META_INSTRUCTIONS.md` to set priorities.
-3. `analyze_repo_capabilities` scans for existing tooling and patterns.
-4. Repo Indexer builds `INDEX.md` and `INDEX.json`.
-5. The Cartographer maps entrypoints, components, and flows.
-6. Impact Analyzer documents risk in `IMPACT.md` for planned changes.
-7. The Trust Layer enforces TDD, then uses auto-debug on failures.
-8. The Command Guard checks `.agentpolicy` before running commands.
-9. The Safety Layer validates that no forbidden paths were touched.
-10. Action Ledger records changes and verification evidence.
-11. Decision Memory captures major architectural changes in ADRs.
-12. Auto-context maintains state for long runs and rotates per task.
-13. Handoff Writer captures compact state for session continuity.
-14. Backlog Curator records gaps and follow-ups.
-15. Pattern Mining proposes automations for future runs.
-16. Size Guard enforces line budgets and rotations.
-17. Skills Auditor validates skill installation.
-18. Quality Gates validate Definition of Done.
+3. Response Style Selector records `USER_PREFERENCES.md`.
+4. `analyze_repo_capabilities` scans for existing tooling and patterns.
+5. Repo Indexer builds `INDEX.md` and `INDEX.json`.
+6. The Cartographer maps entrypoints, components, and flows.
+7. Impact Analyzer documents risk in `IMPACT.md` for planned changes.
+8. Clarify First asks for approval before implementation.
+9. The Trust Layer enforces TDD, then uses auto-debug on failures.
+10. The Command Guard checks `.agentpolicy` before running commands.
+11. The Safety Layer validates that no forbidden paths were touched.
+12. Action Ledger records changes and verification evidence.
+13. Decision Memory captures major architectural changes in ADRs.
+14. Auto-context maintains state for long runs and rotates per task.
+15. Handoff Writer captures compact state for session continuity.
+16. Backlog Curator records gaps and follow-ups.
+17. Pattern Mining proposes automations for future runs.
+18. Size Guard enforces line budgets and rotations.
+19. Skills Auditor validates skill installation.
+20. Quality Gates validate Definition of Done.
 
 ## Safety Layer
 - `.agentignore` defines protected files and directories.
@@ -104,6 +109,12 @@ governance, proof-driven development, and living architecture maps.
 - Keep operational files within `LINE_BUDGETS.yaml`.
 - Split or rotate large docs and update indexes.
 
+## Response Style
+- Respect `USER_PREFERENCES.md` for response style and length.
+
+## Clarify First
+- Ask for approval before implementing changes unless Full Auth is granted.
+
 ## Universal Adaptation
 - The agent detects repo signatures to activate relevant skills.
 - Changes should use AST-based insertion when possible, not raw text edits.
@@ -111,3 +122,4 @@ governance, proof-driven development, and living architecture maps.
 ## Codex Alignment
 - Keep root instructions small and modular to avoid truncation.
 - Prefer Codex-native skills under `.codex/skills/` when present.
+- Use index-first docs to reduce context load.

@@ -9,6 +9,8 @@
 
 ## Operational Skills
 - full_auth
+- response_style_selector
+- clarify_first
 - non_destructive_bootstrap
 - analyze_repo_capabilities
 - detect_commands

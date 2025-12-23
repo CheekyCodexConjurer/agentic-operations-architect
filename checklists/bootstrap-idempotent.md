@@ -12,3 +12,4 @@
 - Repo index and impact files created or updated.
 - Line budgets reviewed in `LINE_BUDGETS.yaml`.
 - Skill audit recorded in `SKILLS_STATUS.md`.
+- Response style recorded in `USER_PREFERENCES.md`.

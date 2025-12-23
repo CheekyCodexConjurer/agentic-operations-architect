@@ -23,6 +23,7 @@ This guide defines safety and quality rules for agent-driven changes.
 - Keep `IMPACT.md` current for high-risk changes.
 - Enforce `LINE_BUDGETS.yaml` to avoid oversized files.
 - Audit skill installation after major updates.
+- Respect `USER_PREFERENCES.md` for response style.
 
 ## Verification
 - Use test-first development when touching behavior.

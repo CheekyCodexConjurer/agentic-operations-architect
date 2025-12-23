@@ -6,16 +6,13 @@ It focuses on governance, proof-driven changes, decision memory, and
 architecture mapping with safe automation.
 
 ## Quick Start
-1. Copy `templates/AGENTS.md` into your repo root as `AGENTS.md`.
-2. Copy `templates/META_INSTRUCTIONS.md` into your repo root.
-3. Copy `templates/.agentignore` into your repo root.
-4. Copy `templates/.agentpolicy` into your repo root.
-5. Copy `templates/QUALITY_GATES.md` into your repo root.
-6. Copy `templates/ARCHITECTURE.md` into your repo root.
-7. Copy `templates/PLANS.md` into your repo root.
-8. Copy `templates/.codex/skills/` into your repo as `.codex/skills/`.
-9. Copy `templates/agent-docs/` into your repo as `.agent-docs/`.
-10. Follow `guides/bootstrap.md` and `guides/architecture-mapping.md`.
+Paste this into your coding agent:
+
+```
+Make my repository autonomous with https://github.com/CheekyCodexConjurer/agentic-operations-architect
+```
+
+Prefer manual setup? Start with `guides/bootstrap.md`.
 
 ## Repository Layout
 - `guides/`: step-by-step playbooks for bootstrap, mapping, and governance.
@@ -47,6 +44,8 @@ architecture mapping with safe automation.
 19. `guides/impact-analysis.md`
 20. `guides/size-guard.md`
 21. `guides/skills-maintenance.md`
+22. `guides/response-style.md`
+23. `guides/clarify-first.md`
 
 ## Additional Guides
 - `guides/decision-memory.md`
@@ -70,6 +69,8 @@ architecture mapping with safe automation.
 - Backlog: high-value follow-ups and gaps.
 - Quality Gates: Definition of Done with explicit checks.
 - Size Guard: line budgets for context-heavy files.
+- Response Style: short responses aligned to user preference.
+- Clarify First: plan and confirm before coding.
 
 ## Core Skills
 - Cartographer: builds and updates `ARCHITECTURE.md`.
@@ -84,6 +85,8 @@ architecture mapping with safe automation.
 - Size Guard: keeps operational files within line budgets.
 - Skills Auditor: finds malformed or missing skills.
 - Skills Sync: aligns `.codex/skills/` with `.agent-docs/skills/`.
+- Response Style Selector: sets the preferred response style.
+- Clarify First: confirms requirements before implementation.
 
 ## Codex Alignment
 - Root `AGENTS.md` stays minimal with modular overrides.
@@ -99,3 +102,12 @@ architecture mapping with safe automation.
 - Evidence-backed changes with tests and ADRs.
 - Idempotent bootstrapping and Codex-native skill activation.
 - Command safety and explicit Definition of Done gates.
+
+## FAQ
+Q: What is the difference between technical and humanized responses?
+A: Technical responses are concise and structured with precise changes and
+references. Humanized responses are short, plain language, minimal bullets, and
+only the context needed to stay informed.
+
+Q: How does "clarify first" look in practice?
+A: See `examples/minimal/CLARIFY_FIRST_EXAMPLE.md`.

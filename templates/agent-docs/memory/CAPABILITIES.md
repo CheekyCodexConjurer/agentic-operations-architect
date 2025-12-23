@@ -24,3 +24,4 @@ skills and workflows the agent should activate.
 - `QUALITY_GATES.md`
 - `LINE_BUDGETS.yaml`
 - `SKILLS_STATUS.md`
+- `USER_PREFERENCES.md`

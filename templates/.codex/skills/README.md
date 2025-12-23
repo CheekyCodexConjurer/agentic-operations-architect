@@ -5,6 +5,8 @@ These skills follow the Codex-native layout:
 
 ## Available Skills
 - full_auth
+- response_style_selector
+- clarify_first
 - analyze_repo_capabilities
 - non_destructive_bootstrap
 - detect_commands
