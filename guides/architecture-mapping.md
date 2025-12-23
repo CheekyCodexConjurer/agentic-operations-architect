@@ -65,3 +65,4 @@ system works.
 - Critical flows are mapped and reviewed.
 - Interaction map shows cross-component edges.
 - Unknowns are explicitly logged.
+- Refactor Gate is triggered after mapping.

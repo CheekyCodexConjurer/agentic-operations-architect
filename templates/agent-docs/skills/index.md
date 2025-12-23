@@ -11,6 +11,7 @@
 - full_auth
 - response_style_selector
 - clarify_first
+- autonomy_kickoff
 - non_destructive_bootstrap
 - analyze_repo_capabilities
 - detect_commands
@@ -30,6 +31,7 @@
 - size_guard
 - skills_auditor
 - skills_sync
+- refactor_gate
 
 ## Notes
 - See `.codex/skills/` for Codex-native skill definitions.

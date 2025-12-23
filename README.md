@@ -14,6 +14,16 @@ Make my repository autonomous with https://github.com/CheekyCodexConjurer/agenti
 
 Prefer manual setup? Start with `guides/bootstrap.md`.
 
+## Continue In A New Chat
+Paste this to resume work:
+
+```
+Make my repository autonomous with https://github.com/CheekyCodexConjurer/agentic-operations-architect.
+Continue from .agent-docs/memory/HANDOFF.md.
+Response style: technical.
+Proceed end-to-end unless blocked.
+```
+
 ## Repository Layout
 - `guides/`: step-by-step playbooks for bootstrap, mapping, and governance.
 - `templates/`: drop-in templates for `AGENTS.md`, `ARCHITECTURE.md`,
@@ -111,3 +121,10 @@ only the context needed to stay informed.
 
 Q: How does "clarify first" look in practice?
 A: See `examples/minimal/CLARIFY_FIRST_EXAMPLE.md`.
+
+Q: Will the agent ask a lot of questions?
+A: No. In autonomy mode it asks only the response style, then proceeds unless
+blocked.
+
+Q: Does autonomy include architecture mapping and a refactor prompt?
+A: Yes. The installer runs mapping, then asks if you want to start refactoring.

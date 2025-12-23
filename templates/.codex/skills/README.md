@@ -7,6 +7,8 @@ These skills follow the Codex-native layout:
 - full_auth
 - response_style_selector
 - clarify_first
+- autonomy_kickoff
+- refactor_gate
 - analyze_repo_capabilities
 - non_destructive_bootstrap
 - detect_commands

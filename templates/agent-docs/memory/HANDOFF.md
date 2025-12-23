@@ -33,6 +33,13 @@ Keep this short and update at major milestones.
 ## Next Actions
 - ...
 
+## Next Chat Prompt
+Paste this in a new chat to continue:
+Make my repository autonomous with https://github.com/CheekyCodexConjurer/agentic-operations-architect.
+Continue from `.agent-docs/memory/HANDOFF.md`.
+Response style: <technical|humanized>.
+Proceed end-to-end unless blocked.
+
 ## References
 - `PLANS.md`
 - `.agent-docs/auto-context/AUTO_CONTEXT.md`

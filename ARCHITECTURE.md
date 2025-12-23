@@ -61,23 +61,25 @@ governance, proof-driven development, and living architecture maps.
 1. Bootstrap copies the templates into a target repo.
 2. The agent reads `AGENTS.md` and `META_INSTRUCTIONS.md` to set priorities.
 3. Response Style Selector records `USER_PREFERENCES.md`.
-4. `analyze_repo_capabilities` scans for existing tooling and patterns.
-5. Repo Indexer builds `INDEX.md` and `INDEX.json`.
-6. The Cartographer maps entrypoints, components, and flows.
-7. Impact Analyzer documents risk in `IMPACT.md` for planned changes.
-8. Clarify First asks for approval before implementation.
-9. The Trust Layer enforces TDD, then uses auto-debug on failures.
-10. The Command Guard checks `.agentpolicy` before running commands.
-11. The Safety Layer validates that no forbidden paths were touched.
-12. Action Ledger records changes and verification evidence.
-13. Decision Memory captures major architectural changes in ADRs.
-14. Auto-context maintains state for long runs and rotates per task.
-15. Handoff Writer captures compact state for session continuity.
-16. Backlog Curator records gaps and follow-ups.
-17. Pattern Mining proposes automations for future runs.
-18. Size Guard enforces line budgets and rotations.
-19. Skills Auditor validates skill installation.
-20. Quality Gates validate Definition of Done.
+4. Autonomy Kickoff runs the full bootstrap with minimal questions.
+5. `analyze_repo_capabilities` scans for existing tooling and patterns.
+6. Repo Indexer builds `INDEX.md` and `INDEX.json`.
+7. The Cartographer maps entrypoints, components, and flows.
+8. Impact Analyzer documents risk in `IMPACT.md` for planned changes.
+9. Refactor Gate asks whether to start refactoring after mapping.
+10. Clarify First asks only when blocked or high-risk.
+11. The Trust Layer enforces TDD, then uses auto-debug on failures.
+12. The Command Guard checks `.agentpolicy` before running commands.
+13. The Safety Layer validates that no forbidden paths were touched.
+14. Action Ledger records changes and verification evidence.
+15. Decision Memory captures major architectural changes in ADRs.
+16. Auto-context maintains state for long runs and rotates per task.
+17. Handoff Writer captures compact state for session continuity.
+18. Backlog Curator records gaps and follow-ups.
+19. Pattern Mining proposes automations for future runs.
+20. Size Guard enforces line budgets and rotations.
+21. Skills Auditor validates skill installation.
+22. Quality Gates validate Definition of Done.
 
 ## Safety Layer
 - `.agentignore` defines protected files and directories.

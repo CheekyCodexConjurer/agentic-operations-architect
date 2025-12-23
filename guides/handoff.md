@@ -15,3 +15,4 @@ resets and long runs.
 - Keep it short and high-signal.
 - Link to `PLANS.md`, auto-context, ADRs, and key files.
 - Include the last verification commands and outcomes.
+- Include a "Next Chat Prompt" for continuity.

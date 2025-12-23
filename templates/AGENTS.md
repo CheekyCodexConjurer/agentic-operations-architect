@@ -36,9 +36,14 @@ optimized for long-running work.
 - Keep responses short and aligned to the chosen style.
 
 ## Clarify First
-- For change requests, ask clarifying questions and suggest improvements.
-- Ask for approval before implementation.
-- Skip only when Full Auth is explicitly granted.
+- For change requests, ask clarifying questions only when blocked or high-risk.
+- Default to implementation after response style is chosen.
+- Skip clarification when the user requests autonomy or Full Auth.
+
+## Refactor Gate
+- After architecture mapping, ask if the user wants to refactor now.
+- If yes, proceed with `PLANS.md` + `IMPACT.md`.
+- If no, capture refactor ideas in `BACKLOG.md`.
 
 ## Full Auth Mode
 - Use only when the user explicitly authorizes end-to-end execution.
