@@ -17,6 +17,9 @@ helps the agent recover context after chat resets or long mapping sessions.
 - Start a new `AUTO_CONTEXT.md` for the next task.
 - Use a short slug that describes the task (example: `map-backend`).
 
+## Handoff Integration
+- Update `.agent-docs/memory/HANDOFF.md` before rotating the task context.
+
 ## Content Rules
 - Keep entries short and actionable.
 - Link to files or ADRs instead of copying content.

@@ -34,6 +34,9 @@ architecture mapping with safe automation.
 9. `guides/execplan.md`
 10. `guides/codex-skills.md`
 11. `guides/safety-validation.md`
+12. `guides/full-auth.md`
+13. `guides/handoff.md`
+14. `guides/backlog.md`
 
 ## Additional Guides
 - `guides/decision-memory.md`
@@ -52,11 +55,16 @@ architecture mapping with safe automation.
 - Action Ledger: auditable record of actions and evidence.
 - Pattern Mining: extracts automation candidates.
 - ExecPlan: structured planning for large tasks.
+- Handoff: compact continuity snapshot.
+- Backlog: high-value follow-ups and gaps.
 
 ## Core Skills
 - Cartographer: builds and updates `ARCHITECTURE.md`.
 - Archaeologist: detects legacy patterns and consistency trade-offs.
 - Shadow Coder: builds safe parallel architectures (strangler fig).
+- Handoff Writer: keeps `HANDOFF.md` up to date.
+- Backlog Curator: maintains follow-ups in `BACKLOG.md`.
+- Full Auth: opt-in end-to-end execution mode.
 
 ## Codex Alignment
 - Root `AGENTS.md` stays minimal with modular overrides.

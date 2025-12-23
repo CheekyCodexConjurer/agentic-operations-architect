@@ -10,3 +10,6 @@ Rule: do not auto-create skills without explicit approval.
 - Suggested automation:
 - Candidate skill:
 - Status: proposed | accepted | rejected
+
+## Backlog Link
+- When a pattern implies follow-up work, add an item to `BACKLOG.md`.

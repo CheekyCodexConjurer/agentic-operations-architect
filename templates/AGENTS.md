@@ -24,6 +24,11 @@ optimized for long-running work.
 - Review: risk-focused assessment and gaps.
 - Maintain: cleanup, refactors, and documentation updates.
 
+## Full Auth Mode
+- Use only when the user explicitly authorizes end-to-end execution.
+- Produce a phased plan first, then execute all phases in one run.
+- Stop only when Definition of Done is met.
+
 ## Auto-Debug Protocol
 Simulation -> Run -> Self-Correct Loop
 1. Simulation: predict failures and design a repro.
@@ -51,6 +56,10 @@ Simulation -> Run -> Self-Correct Loop
 ## Action Ledger
 - Record meaningful actions in `.agent-docs/memory/ACTION_LOG.md`.
 - Mirror entries in `.agent-docs/memory/ACTION_LOG.jsonl` for mining.
+
+## Handoff and Backlog
+- Maintain `.agent-docs/memory/HANDOFF.md` for session resets.
+- Maintain `.agent-docs/memory/BACKLOG.md` for high-value follow-ups.
 
 ## Architecture Mapping Protocol
 - Inventory entrypoints and major components.

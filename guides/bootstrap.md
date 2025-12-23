@@ -16,6 +16,7 @@ and protocols in this repo.
 10. Start the auto-context file for the current task.
 11. Run the architecture mapping protocol.
 12. Record the bootstrap in the Action Log.
+13. Initialize `HANDOFF.md` and `BACKLOG.md`.
 
 ## Safety
 - If `AGENTS.md` or `.agent-docs/` already exist, use merge protocol by default.

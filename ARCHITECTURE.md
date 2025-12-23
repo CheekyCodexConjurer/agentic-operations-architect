@@ -37,6 +37,8 @@ governance, proof-driven development, and living architecture maps.
 - `.agent-docs/memory/COMMANDS.json`: machine commands.
 - `.agent-docs/memory/MANIFEST.yaml`: machine-readable repo manifest.
 - `.agent-docs/memory/CAPABILITIES.md`: capability detection log.
+- `.agent-docs/memory/HANDOFF.md`: compact state snapshot for session resets.
+- `.agent-docs/memory/BACKLOG.md`: high-value follow-ups and gaps.
 - `.agent-docs/auto-context/AUTO_CONTEXT.md`: task-scoped context log.
 - `.agent-docs/skills/*.md`: skill playbooks for specialized behaviors.
 - `.codex/skills/*/SKILL.md`: Codex-native skill definitions.
@@ -51,7 +53,9 @@ governance, proof-driven development, and living architecture maps.
 7. Action Ledger records changes and verification evidence.
 8. Decision Memory captures major architectural changes in ADRs.
 9. Auto-context maintains state for long runs and rotates per task.
-10. Pattern Mining proposes automations for future runs.
+10. Handoff Writer captures compact state for session continuity.
+11. Backlog Curator records gaps and follow-ups.
+12. Pattern Mining proposes automations for future runs.
 
 ## Safety Layer
 - `.agentignore` defines protected files and directories.
@@ -78,3 +82,7 @@ governance, proof-driven development, and living architecture maps.
 ## Universal Adaptation
 - The agent detects repo signatures to activate relevant skills.
 - Changes should use AST-based insertion when possible, not raw text edits.
+
+## Codex Alignment
+- Keep root instructions small and modular to avoid truncation.
+- Prefer Codex-native skills under `.codex/skills/` when present.

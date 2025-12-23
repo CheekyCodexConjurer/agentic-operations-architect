@@ -8,6 +8,7 @@ Pattern mining turns action logs into reusable automation and skill proposals.
 
 ## Output
 - `.agent-docs/memory/PATTERNS.md`
+- `.agent-docs/memory/BACKLOG.md` (when follow-ups are needed)
 
 ## Rules
 - Extract only high-signal recurring patterns.

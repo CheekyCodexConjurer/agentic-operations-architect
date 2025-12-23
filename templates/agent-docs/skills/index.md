@@ -8,6 +8,7 @@
 - ast_injection
 
 ## Operational Skills
+- full_auth
 - non_destructive_bootstrap
 - analyze_repo_capabilities
 - detect_commands
@@ -17,6 +18,8 @@
 - execplan
 - safety_validation
 - safe_refactor_migration
+- handoff_writer
+- backlog_curator
 
 ## Notes
 - See `.codex/skills/` for Codex-native skill definitions.
