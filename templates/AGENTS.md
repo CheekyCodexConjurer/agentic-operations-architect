@@ -11,6 +11,13 @@ optimized for long-running work.
 4. Implement with guardrails and verify.
 5. Summarize changes and propose next steps.
 
+## Instruction Chain Strategy
+- Keep root `AGENTS.md` concise and modular.
+- Put module-specific rules in subdirectory `AGENTS.md` files.
+- Use `AGENTS.override.md` to replace rules when needed.
+- Avoid overloading a single file; link to guides instead.
+- Stay under instruction size limits to avoid truncation (default 32KiB).
+
 ## Task Modes
 - Scout: fast reading, zero changes.
 - Build: implement changes with verification.
@@ -35,6 +42,16 @@ Simulation -> Run -> Self-Correct Loop
 - Rotate per task: archive as `AUTO_CONTEXT_<timestamp>_<slug>.md` when done.
 - Never store secrets or sensitive data in auto-context.
 
+## Merge Protocol (Idempotent)
+- Never delete or rename existing agent docs by default.
+- If a file exists, append or update within marked blocks only.
+- If conflicts exist, add a companion note in `.agent-docs/compat/`.
+- Reruns must be safe and not duplicate content.
+
+## Action Ledger
+- Record meaningful actions in `.agent-docs/memory/ACTION_LOG.md`.
+- Mirror entries in `.agent-docs/memory/ACTION_LOG.jsonl` for mining.
+
 ## Architecture Mapping Protocol
 - Inventory entrypoints and major components.
 - Map dependencies and interactions across files and services.
@@ -54,6 +71,11 @@ Simulation -> Run -> Self-Correct Loop
 - Run `analyze_repo_capabilities` to detect existing tooling and patterns.
 - Record findings in `.agent-docs/memory/CAPABILITIES.md`.
 - Activate compatible skills instead of overwriting local conventions.
+- Prefer Codex-native skills in `.codex/skills/` when available.
+
+## Commands and Manifest
+- Maintain `.agent-docs/memory/COMMANDS.md` and `COMMANDS.json`.
+- Keep `.agent-docs/memory/MANIFEST.yaml` up to date.
 
 ## AST Injection
 - Use AST-aware edits for code changes when possible.
@@ -67,3 +89,7 @@ Simulation -> Run -> Self-Correct Loop
 - Back up before overwriting user-owned files.
 - Avoid destructive changes without explicit approval.
 - Do not store secrets in docs or logs.
+
+## ExecPlan for Long Tasks
+- Use `PLANS.md` for multi-hour or high-risk changes.
+- Track progress and verification explicitly.

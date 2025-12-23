@@ -1,0 +1,12 @@
+schema_version: 1
+languages: []
+package_managers: []
+test_command: ""
+lint_command: ""
+format_command: ""
+build_command: ""
+entrypoints: []
+services: []
+forbidden_zones: []
+confidence: low
+last_verified: ""

@@ -14,3 +14,4 @@ The goal is to detect existing tooling and adapt, not overwrite.
 - Record findings in `.agent-docs/memory/CAPABILITIES.md`.
 - Activate relevant skills and protocols.
 - Flag conflicts between existing conventions and new plans.
+- Update `COMMANDS.md`, `COMMANDS.json`, and `MANIFEST.yaml` when possible.

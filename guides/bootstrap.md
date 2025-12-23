@@ -8,15 +8,19 @@ and protocols in this repo.
 2. Copy `templates/META_INSTRUCTIONS.md` into the target repo root.
 3. Copy `templates/.agentignore` into the target repo root.
 4. Copy `templates/ARCHITECTURE.md` into the target repo root.
-5. Copy `templates/agent-docs/` into the target repo as `.agent-docs/`.
-6. Fill the architecture index and ADR header with known facts.
-7. Run `analyze_repo_capabilities` and record the manifest.
-8. Start the auto-context file for the current task.
-9. Run the architecture mapping protocol.
+5. Copy `templates/PLANS.md` into the target repo root.
+6. Copy `templates/.codex/skills/` into the target repo as `.codex/skills/`.
+7. Copy `templates/agent-docs/` into the target repo as `.agent-docs/`.
+8. Fill the architecture index and ADR header with known facts.
+9. Run `analyze_repo_capabilities` and record the manifest.
+10. Start the auto-context file for the current task.
+11. Run the architecture mapping protocol.
+12. Record the bootstrap in the Action Log.
 
 ## Safety
-- If `AGENTS.md` or `.agent-docs/` already exist, archive them with a timestamp.
+- If `AGENTS.md` or `.agent-docs/` already exist, use merge protocol by default.
 - Confirm `.agentignore` covers sensitive files and production configs.
-- Back up or rename existing agent docs before overwriting.
+- Avoid renames or deletes unless explicitly requested.
 - Keep the auto-context file free of secrets.
 - Record key decisions in the ADR log.
+- Follow the merge protocol for idempotent updates.

@@ -16,3 +16,7 @@ skills and workflows the agent should activate.
 
 ## Notes
 - ...
+
+## Related Artifacts
+- `COMMANDS.md` / `COMMANDS.json`
+- `MANIFEST.yaml`
