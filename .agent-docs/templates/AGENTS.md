@@ -35,6 +35,12 @@ optimized for long-running work.
 - Record the choice in `.agent-docs/memory/USER_PREFERENCES.md`.
 - Keep responses short and aligned to the chosen style.
 
+## Autonomy Installer Trigger
+- If the user requests autonomy or `AUTONOMY_MODE.md` is auto/pending, run
+  `autonomy_kickoff` immediately.
+- Ask only for response style, then proceed end-to-end.
+- Mark `AUTONOMY_MODE.md` as done when finished.
+
 ## Clarify First
 - For change requests, ask clarifying questions only when blocked or high-risk.
 - Default to implementation after response style is chosen.

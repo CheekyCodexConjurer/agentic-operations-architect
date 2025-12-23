@@ -4,15 +4,15 @@ Use this guide to prepare any repository for agentic work using the templates
 and protocols in this repo.
 
 ## Steps
-1. Copy `templates/AGENTS.md` into the target repo root as `AGENTS.md`.
-2. Copy `templates/META_INSTRUCTIONS.md` into the target repo root.
-3. Copy `templates/.agentignore` into the target repo root.
-4. Copy `templates/.agentpolicy` into the target repo root.
-5. Copy `templates/QUALITY_GATES.md` into the target repo root.
-6. Copy `templates/ARCHITECTURE.md` into the target repo root.
-7. Copy `templates/PLANS.md` into the target repo root.
-8. Copy `templates/.codex/skills/` into the target repo as `.codex/skills/`.
-9. Copy `templates/agent-docs/` into the target repo as `.agent-docs/`.
+1. Copy `.agent-docs/templates/AGENTS.md` into the target repo root as `AGENTS.md`.
+2. Copy `.agent-docs/templates/META_INSTRUCTIONS.md` into the target repo root.
+3. Copy `.agent-docs/templates/.agentignore` into the target repo root.
+4. Copy `.agent-docs/templates/.agentpolicy` into the target repo root.
+5. Copy `.agent-docs/templates/QUALITY_GATES.md` into the target repo root.
+6. Copy `.agent-docs/templates/ARCHITECTURE.md` into the target repo root.
+7. Copy `.agent-docs/templates/PLANS.md` into the target repo root.
+8. Copy `.agent-docs/templates/.codex/skills/` into the target repo as `.codex/skills/`.
+9. Copy `.agent-docs/templates/agent-docs/` into the target repo as `.agent-docs/`.
 10. Ask for response style preference and record it in `USER_PREFERENCES.md`.
 11. Fill `QUALITY_GATES.md`, the architecture index, and ADR header.
 12. Run `analyze_repo_capabilities` and record the manifest.
@@ -21,10 +21,12 @@ and protocols in this repo.
 15. Record the bootstrap in the Action Log.
 16. Initialize `HANDOFF.md`, `BACKLOG.md`, and `INDEX.md`.
 17. Review `LINE_BUDGETS.yaml` for file size limits.
+18. If `AUTONOMY_MODE.md` is auto/pending, run `autonomy_kickoff`.
 
 ## Installer Mode
 - If the user says "make my repository autonomous", run `autonomy_kickoff`.
 - Ask only the response style, then proceed end-to-end.
+- If `AUTONOMY_MODE.md` is auto/pending, run the installer automatically.
 
 ## Safety
 - If `AGENTS.md` or `.agent-docs/` already exist, use merge protocol by default.

@@ -25,3 +25,4 @@ skills and workflows the agent should activate.
 - `LINE_BUDGETS.yaml`
 - `SKILLS_STATUS.md`
 - `USER_PREFERENCES.md`
+- `AUTONOMY_MODE.md`

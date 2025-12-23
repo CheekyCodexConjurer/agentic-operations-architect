@@ -53,6 +53,7 @@ governance, proof-driven development, and living architecture maps.
 - `.agent-docs/memory/LINE_BUDGETS.yaml`: size limits for docs.
 - `.agent-docs/memory/SKILLS_STATUS.md`: skill audit log.
 - `.agent-docs/memory/USER_PREFERENCES.md`: response style preference.
+- `.agent-docs/memory/AUTONOMY_MODE.md`: auto-run installer status.
 - `.agent-docs/auto-context/AUTO_CONTEXT.md`: task-scoped context log.
 - `.agent-docs/skills/*.md`: skill playbooks for specialized behaviors.
 - `.codex/skills/*/SKILL.md`: Codex-native skill definitions.

@@ -12,7 +12,22 @@ Paste this into your coding agent:
 Make my repository autonomous with https://github.com/CheekyCodexConjurer/agentic-operations-architect
 ```
 
-Prefer manual setup? Start with `guides/bootstrap.md`.
+Prefer manual setup? Start with `.agent-docs/guides/bootstrap.md`.
+
+## Installer Prompt (Recommended)
+This runs the full autonomy installer, maps architecture, then asks if you want
+to start refactoring:
+
+```
+Make my repository autonomous with https://github.com/CheekyCodexConjurer/agentic-operations-architect.
+Use autonomy_kickoff. Ask only for response style.
+After mapping, ask if I want to start refactoring.
+Proceed end-to-end unless blocked.
+```
+
+## Autonomy Mode (Zero Prompts)
+If `.agent-docs/memory/AUTONOMY_MODE.md` is set to `auto` and `pending`, the
+agent should run the installer automatically on first contact.
 
 ## Continue In A New Chat
 Paste this to resume work:
@@ -25,45 +40,47 @@ Proceed end-to-end unless blocked.
 ```
 
 ## Repository Layout
-- `guides/`: step-by-step playbooks for bootstrap, mapping, and governance.
-- `templates/`: drop-in templates for `AGENTS.md`, `ARCHITECTURE.md`,
+- Root is intentionally minimal; see `.agent-docs/INDEX.md` for navigation.
+- `.agent-docs/`: all documentation, templates, examples, and checklists.
+- `.agent-docs/guides/`: step-by-step playbooks for bootstrap, mapping, and governance.
+- `.agent-docs/templates/`: drop-in templates for `AGENTS.md`, `ARCHITECTURE.md`,
   `META_INSTRUCTIONS.md`, `.agentignore`, and `.agent-docs/`.
-- `templates/.codex/skills/`: Codex-native skills (`SKILL.md` format).
-- `checklists/`: validation lists for mapping completeness and safety checks.
-- `examples/`: minimal filled-in examples for reference.
+- `.agent-docs/templates/.codex/skills/`: Codex-native skills (`SKILL.md` format).
+- `.agent-docs/checklists/`: validation lists for mapping completeness and safety checks.
+- `.agent-docs/examples/`: minimal filled-in examples for reference.
 
 ## Recommended Reading Order
-1. `guides/bootstrap.md`
-2. `guides/governance.md`
-3. `guides/architecture-mapping.md`
-4. `guides/trust-layer-tdd.md`
-5. `guides/repo-capabilities.md`
-6. `guides/merge-protocol.md`
-7. `guides/action-log.md`
-8. `guides/commands-manifest.md`
-9. `guides/execplan.md`
-10. `guides/codex-skills.md`
-11. `guides/safety-validation.md`
-12. `guides/full-auth.md`
-13. `guides/handoff.md`
-14. `guides/backlog.md`
-15. `guides/context-compaction.md`
-16. `guides/command-guard.md`
-17. `guides/quality-gates.md`
-18. `guides/repo-indexer.md`
-19. `guides/impact-analysis.md`
-20. `guides/size-guard.md`
-21. `guides/skills-maintenance.md`
-22. `guides/response-style.md`
-23. `guides/clarify-first.md`
+1. `.agent-docs/guides/bootstrap.md`
+2. `.agent-docs/guides/governance.md`
+3. `.agent-docs/guides/architecture-mapping.md`
+4. `.agent-docs/guides/trust-layer-tdd.md`
+5. `.agent-docs/guides/repo-capabilities.md`
+6. `.agent-docs/guides/merge-protocol.md`
+7. `.agent-docs/guides/action-log.md`
+8. `.agent-docs/guides/commands-manifest.md`
+9. `.agent-docs/guides/execplan.md`
+10. `.agent-docs/guides/codex-skills.md`
+11. `.agent-docs/guides/safety-validation.md`
+12. `.agent-docs/guides/full-auth.md`
+13. `.agent-docs/guides/handoff.md`
+14. `.agent-docs/guides/backlog.md`
+15. `.agent-docs/guides/context-compaction.md`
+16. `.agent-docs/guides/command-guard.md`
+17. `.agent-docs/guides/quality-gates.md`
+18. `.agent-docs/guides/repo-indexer.md`
+19. `.agent-docs/guides/impact-analysis.md`
+20. `.agent-docs/guides/size-guard.md`
+21. `.agent-docs/guides/skills-maintenance.md`
+22. `.agent-docs/guides/response-style.md`
+23. `.agent-docs/guides/clarify-first.md`
 
 ## Additional Guides
-- `guides/decision-memory.md`
-- `guides/shadow-coder.md`
-- `guides/ast-injection.md`
-- `guides/auto-context.md`
-- `guides/large-file-partitioning.md`
-- `guides/pattern-mining.md`
+- `.agent-docs/guides/decision-memory.md`
+- `.agent-docs/guides/shadow-coder.md`
+- `.agent-docs/guides/ast-injection.md`
+- `.agent-docs/guides/auto-context.md`
+- `.agent-docs/guides/large-file-partitioning.md`
+- `.agent-docs/guides/pattern-mining.md`
 
 ## Core Layers
 - Safety Layer: forbidden zones via `.agentignore` and pre-commit validation.
@@ -120,7 +137,7 @@ references. Humanized responses are short, plain language, minimal bullets, and
 only the context needed to stay informed.
 
 Q: How does "clarify first" look in practice?
-A: See `examples/minimal/CLARIFY_FIRST_EXAMPLE.md`.
+A: See `.agent-docs/examples/minimal/CLARIFY_FIRST_EXAMPLE.md`.
 
 Q: Will the agent ask a lot of questions?
 A: No. In autonomy mode it asks only the response style, then proceeds unless

@@ -41,6 +41,9 @@ files:
   ".agent-docs/memory/USER_PREFERENCES.md":
     max_lines: 100
     rotate: false
+  ".agent-docs/memory/AUTONOMY_MODE.md":
+    max_lines: 50
+    rotate: false
   ".agent-docs/architecture/flow-map.md":
     max_lines: 400
     split_by_domain: true
