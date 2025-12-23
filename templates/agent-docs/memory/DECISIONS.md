@@ -8,4 +8,5 @@ Record key architectural decisions, rationale, and consequences.
 - Status: proposed | accepted | superseded
 - Context:
 - Decision:
+- Alternatives:
 - Consequences:

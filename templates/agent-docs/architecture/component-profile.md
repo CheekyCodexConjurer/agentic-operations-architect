@@ -6,6 +6,7 @@ Use one section per component, service, or package.
 - Purpose:
 - Owner:
 - Location:
+- Confidence: high | medium | low
 
 ### Entrypoints
 - ...

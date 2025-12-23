@@ -10,6 +10,7 @@ system works.
 - Configuration files and dependency manifests.
 
 ## Outputs
+- `ARCHITECTURE.md` updated (baseline truth).
 - `.agent-docs/architecture.md` updated.
 - `.agent-docs/architecture/interaction-map.md` filled.
 - `.agent-docs/architecture/flow-map.md` filled.
@@ -34,6 +35,15 @@ system works.
 - L0: system overview and purpose.
 - L1: components, boundaries, and ownership.
 - L2: critical flows and data movement.
+
+## Cartographer Responsibilities
+- Keep `ARCHITECTURE.md` current after changes.
+- Update interaction and flow maps as dependencies evolve.
+- Document gaps instead of guessing.
+
+## Archaeologist Signal
+- Note legacy vs modern patterns while mapping.
+- Record a recommendation: modernize globally or preserve local consistency.
 
 ## Automation Heuristics
 - Start from entrypoints and follow dependency edges outward.

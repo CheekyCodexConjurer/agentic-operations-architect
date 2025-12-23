@@ -11,6 +11,7 @@ Use this guide when files are too large to process in one pass.
 - Summaries must include purpose, inputs, outputs, and side effects.
 - Reference line numbers or section names when possible.
 - Capture unresolved questions in the gaps list.
+- Record progress checkpoints in auto-context.
 
 ## Reassembly
 - Maintain an index of chunks and their summaries.

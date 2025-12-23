@@ -1,7 +1,7 @@
 # Architecture Index
 
 This index maps the system architecture and links to deeper documents in
-`architecture/`.
+`architecture/`. Use `ARCHITECTURE.md` for the root baseline map.
 
 ## L0 System Overview
 - Purpose:
