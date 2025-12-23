@@ -25,6 +25,10 @@
 - quality_gates
 - repo_indexer
 - impact_analyzer
+- size_guard
+- skills_auditor
+- skills_sync
 
 ## Notes
 - See `.codex/skills/` for Codex-native skill definitions.
+- Use this index to select which skills to load, not all at once.

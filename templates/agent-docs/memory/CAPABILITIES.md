@@ -22,3 +22,5 @@ skills and workflows the agent should activate.
 - `MANIFEST.yaml`
 - `INDEX.md` / `INDEX.json`
 - `QUALITY_GATES.md`
+- `LINE_BUDGETS.yaml`
+- `SKILLS_STATUS.md`

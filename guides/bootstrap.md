@@ -19,6 +19,7 @@ and protocols in this repo.
 13. Run the architecture mapping protocol.
 14. Record the bootstrap in the Action Log.
 15. Initialize `HANDOFF.md`, `BACKLOG.md`, and `INDEX.md`.
+16. Review `LINE_BUDGETS.yaml` for file size limits.
 
 ## Safety
 - If `AGENTS.md` or `.agent-docs/` already exist, use merge protocol by default.
@@ -27,3 +28,4 @@ and protocols in this repo.
 - Keep the auto-context file free of secrets.
 - Record key decisions in the ADR log.
 - Follow the merge protocol for idempotent updates.
+- If `.codex/skills/` already exists, run `skills_auditor` and `skills_sync`.

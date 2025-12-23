@@ -19,6 +19,9 @@ These skills follow the Codex-native layout:
 - quality_gates
 - repo_indexer
 - impact_analyzer
+- size_guard
+- skills_auditor
+- skills_sync
 - cartographer
 - archaeologist
 - shadow_coder

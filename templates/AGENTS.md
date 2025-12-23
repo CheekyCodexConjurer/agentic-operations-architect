@@ -18,6 +18,11 @@ optimized for long-running work.
 - Avoid overloading a single file; link to guides instead.
 - Stay under instruction size limits to avoid truncation (default 32KiB).
 
+## Context Economy
+- Prefer index files that link to detailed docs.
+- Load only the files needed for the current task.
+- Avoid reading every document by default to prevent tunnel vision.
+
 ## Task Modes
 - Scout: fast reading, zero changes.
 - Build: implement changes with verification.
@@ -65,11 +70,16 @@ Simulation -> Run -> Self-Correct Loop
 - Periodically compact `AUTO_CONTEXT.md` into `HANDOFF.md`.
 - Archive completed task context to keep files small.
 
+## Size Guard
+- Keep context-heavy files between 300-500 lines.
+- Use `LINE_BUDGETS.yaml` to rotate or split long docs.
+
 ## Architecture Mapping Protocol
 - Inventory entrypoints and major components.
 - Map dependencies and interactions across files and services.
 - Document critical flows and side effects.
 - Record confidence levels and unknowns.
+- Keep `ARCHITECTURE.md` and `.agent-docs/architecture.md` as index-only.
 
 ## Safety Layer
 - Respect `.agentignore` forbidden zones without exception.
@@ -94,6 +104,10 @@ Simulation -> Run -> Self-Correct Loop
 ## Repo Index and Impact
 - Maintain `.agent-docs/memory/INDEX.md` and `INDEX.json`.
 - Create `.agent-docs/memory/IMPACT.md` before high-risk changes.
+
+## Skills Integrity
+- Audit `.codex/skills/` for correct structure.
+- Sync with `.agent-docs/skills/` using merge protocol.
 
 ## AST Injection
 - Use AST-aware edits for code changes when possible.

@@ -25,3 +25,4 @@ helps the agent recover context after chat resets or long mapping sessions.
 - Keep entries short and actionable.
 - Link to files or ADRs instead of copying content.
 - Never include secrets, tokens, or private data.
+- Stay within `LINE_BUDGETS.yaml` limits.

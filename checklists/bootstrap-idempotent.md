@@ -10,3 +10,5 @@
 - Action Log and manifest files created or updated.
 - Handoff and backlog files created or updated.
 - Repo index and impact files created or updated.
+- Line budgets reviewed in `LINE_BUDGETS.yaml`.
+- Skill audit recorded in `SKILLS_STATUS.md`.

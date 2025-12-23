@@ -1,7 +1,8 @@
 # Architecture Mapping Checklist
 
 - Entrypoints listed and located.
-- `ARCHITECTURE.md` baseline captured.
+- `ARCHITECTURE.md` index updated.
+- `architecture/overview.md` baseline captured.
 - Components grouped with clear boundaries.
 - Interaction map filled with key edges.
 - Critical flows documented end to end.

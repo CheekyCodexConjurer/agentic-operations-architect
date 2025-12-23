@@ -12,7 +12,8 @@ Keep context small and recoverable across long sessions.
 1. Summarize current state into `HANDOFF.md`.
 2. Rotate or trim `AUTO_CONTEXT.md`.
 3. Update `BACKLOG.md` with open items.
-4. Record a compact Action Log entry.
+4. Respect `LINE_BUDGETS.yaml` limits.
+5. Record a compact Action Log entry.
 
 ## Guardrails
 - Do not remove evidence or required references.

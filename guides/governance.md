@@ -21,6 +21,8 @@ This guide defines safety and quality rules for agent-driven changes.
 - Record recurring patterns in `PATTERNS.md`.
 - Keep `INDEX.md` current for navigation.
 - Keep `IMPACT.md` current for high-risk changes.
+- Enforce `LINE_BUDGETS.yaml` to avoid oversized files.
+- Audit skill installation after major updates.
 
 ## Verification
 - Use test-first development when touching behavior.

@@ -10,8 +10,9 @@ system works.
 - Configuration files and dependency manifests.
 
 ## Outputs
-- `ARCHITECTURE.md` updated (baseline truth).
-- `.agent-docs/architecture.md` updated.
+- `ARCHITECTURE.md` updated (index only).
+- `.agent-docs/architecture.md` updated (index).
+- `.agent-docs/architecture/overview.md` updated (baseline truth).
 - `.agent-docs/architecture/interaction-map.md` filled.
 - `.agent-docs/architecture/flow-map.md` filled.
 - `.agent-docs/architecture/component-profile.md` sections created.
@@ -27,9 +28,10 @@ system works.
 5. Map critical flows:
    - Pick the highest value user paths.
    - Trace the call chain end to end.
-6. Capture side effects and external dependencies.
-7. Record confidence levels and unknowns.
-8. Iterate until coverage is acceptable.
+6. Update `ARCHITECTURE.md` and `.agent-docs/architecture.md` indexes.
+7. Capture side effects and external dependencies.
+8. Record confidence levels and unknowns.
+9. Iterate until coverage is acceptable.
 
 ## Mapping Levels
 - L0: system overview and purpose.
@@ -37,7 +39,8 @@ system works.
 - L2: critical flows and data movement.
 
 ## Cartographer Responsibilities
-- Keep `ARCHITECTURE.md` current after changes.
+- Keep `ARCHITECTURE.md` short and index-only.
+- Maintain the baseline in `.agent-docs/architecture/overview.md`.
 - Update interaction and flow maps as dependencies evolve.
 - Document gaps instead of guessing.
 
@@ -55,6 +58,7 @@ system works.
 - Partition by domain or service.
 - Map one domain per task and rotate auto-context per task.
 - Maintain a global index of mapped and unmapped areas.
+- Keep indexes short and link to domain detail files.
 
 ## Done Criteria
 - All entrypoints are listed with owners or locations.

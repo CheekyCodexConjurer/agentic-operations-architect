@@ -1,0 +1,49 @@
+schema_version: 1
+default_max_lines: 400
+hard_max_lines: 500
+notes:
+  - "Keep operational files between 300-500 lines for fast context loading."
+  - "Rotate or split when limits are exceeded."
+files:
+  ".agent-docs/auto-context/AUTO_CONTEXT.md":
+    max_lines: 400
+    rotate: true
+    archive_pattern: "AUTO_CONTEXT_<timestamp>_<slug>.md"
+  ".agent-docs/memory/ACTION_LOG.md":
+    max_lines: 400
+    rotate: true
+    archive_pattern: "ACTION_LOG_<timestamp>.md"
+  ".agent-docs/memory/ACTION_LOG.jsonl":
+    max_lines: 500
+    rotate: true
+    archive_pattern: "ACTION_LOG_<timestamp>.jsonl"
+  ".agent-docs/memory/BACKLOG.md":
+    max_lines: 300
+    rotate: true
+    archive_pattern: "BACKLOG_<timestamp>.md"
+  ".agent-docs/memory/PATTERNS.md":
+    max_lines: 300
+    rotate: true
+    archive_pattern: "PATTERNS_<timestamp>.md"
+  ".agent-docs/memory/HANDOFF.md":
+    max_lines: 200
+    rotate: false
+  ".agent-docs/memory/INDEX.md":
+    max_lines: 200
+    rotate: false
+  ".agent-docs/memory/IMPACT.md":
+    max_lines: 200
+    rotate: false
+  ".agent-docs/memory/SKILLS_STATUS.md":
+    max_lines: 200
+    rotate: true
+    archive_pattern: "SKILLS_STATUS_<timestamp>.md"
+  ".agent-docs/architecture/flow-map.md":
+    max_lines: 400
+    split_by_domain: true
+  ".agent-docs/architecture/interaction-map.md":
+    max_lines: 400
+    split_by_domain: true
+  ".agent-docs/architecture/component-profile.md":
+    max_lines: 400
+    split_by_domain: true

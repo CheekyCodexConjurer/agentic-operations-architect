@@ -11,3 +11,4 @@ YAML frontmatter (`name`, `description`). This repo keeps a dual layer:
 - Keep skill instructions concise and focused.
 - Use `full_auth` only when explicitly authorized.
 - See `templates/.codex/skills/README.md` for the current skill list.
+- Record audits in `.agent-docs/memory/SKILLS_STATUS.md`.

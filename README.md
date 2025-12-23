@@ -45,6 +45,8 @@ architecture mapping with safe automation.
 17. `guides/quality-gates.md`
 18. `guides/repo-indexer.md`
 19. `guides/impact-analysis.md`
+20. `guides/size-guard.md`
+21. `guides/skills-maintenance.md`
 
 ## Additional Guides
 - `guides/decision-memory.md`
@@ -59,7 +61,7 @@ architecture mapping with safe automation.
 - Command Guard: safe command execution via `.agentpolicy`.
 - Trust Layer: test-first changes, auto-debug, and proof of correctness.
 - Decision Memory: ADRs for major architectural choices.
-- Cartography: living architecture maps that stay current.
+- Cartography: index-first architecture maps with detailed drill-downs.
 - Auto-Context: long-run memory for large or multi-step tasks.
 - Action Ledger: auditable record of actions and evidence.
 - Pattern Mining: extracts automation candidates.
@@ -67,6 +69,7 @@ architecture mapping with safe automation.
 - Handoff: compact continuity snapshot.
 - Backlog: high-value follow-ups and gaps.
 - Quality Gates: Definition of Done with explicit checks.
+- Size Guard: line budgets for context-heavy files.
 
 ## Core Skills
 - Cartographer: builds and updates `ARCHITECTURE.md`.
@@ -78,12 +81,17 @@ architecture mapping with safe automation.
 - Context Compactor: keeps memory concise for long runs.
 - Command Guard: enforces command safety rules.
 - Quality Gates: enforces Definition of Done.
+- Size Guard: keeps operational files within line budgets.
+- Skills Auditor: finds malformed or missing skills.
+- Skills Sync: aligns `.codex/skills/` with `.agent-docs/skills/`.
 
 ## Codex Alignment
 - Root `AGENTS.md` stays minimal with modular overrides.
 - Codex-native skills live in `.codex/skills/`.
 - Merge protocol keeps bootstraps idempotent.
 - `.agentpolicy` and `QUALITY_GATES.md` define safety and completion.
+- Index-first docs reduce context and prevent tunnel vision.
+- `ARCHITECTURE.md` stays index-only; details live in `.agent-docs/architecture/`.
 
 ## What It Enables
 - Safe, repeatable architecture mapping with explicit confidence and gaps.
