@@ -29,6 +29,28 @@ Proceed end-to-end unless blocked.
 If `.agent-docs/memory/AUTONOMY_MODE.md` is set to `auto` and `pending`, the
 agent should run the installer automatically on first contact.
 
+## Agent Management (Auto)
+The kit can auto-manage multiple agents with a registry and proposals. Use:
+
+```
+Run agent_manager. Keep AGENTS_REGISTRY updated and propose new agents for uncovered domains.
+```
+
+## Update The Kit
+Use the update guide or this prompt:
+
+```
+Check for upstream updates from https://github.com/CheekyCodexConjurer/agentic-operations-architect.
+Compare with .agent-docs/memory/KIT_VERSION.md.
+If updates exist, apply non_destructive_bootstrap using the merge protocol.
+Sync .agent-docs/, .codex/skills/, and templates.
+Run skills_auditor and skills_sync.
+Update INDEX.md, SKILLS_STATUS.md, and ACTION_LOG with evidence.
+Write the new commit hash and date to KIT_VERSION.md.
+```
+
+Example prompt: `.agent-docs/examples/update/UPDATE_PROMPT.md`.
+
 ## Continue In A New Chat
 Paste this to resume work:
 

@@ -14,6 +14,7 @@ These skills follow the Codex-native layout:
 - detect_commands
 - action_logger
 - pattern_miner
+- agent_manager
 - write_adr
 - execplan
 - handoff_writer
@@ -26,6 +27,8 @@ These skills follow the Codex-native layout:
 - size_guard
 - skills_auditor
 - skills_sync
+- update_architecture
+- update_kit
 - cartographer
 - archaeologist
 - shadow_coder

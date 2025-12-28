@@ -17,6 +17,7 @@
 - detect_commands
 - action_logger
 - pattern_miner
+- agent_manager
 - write_adr
 - execplan
 - safety_validation
@@ -32,6 +33,8 @@
 - skills_auditor
 - skills_sync
 - refactor_gate
+- update_architecture
+- update_kit
 
 ## Notes
 - See `.codex/skills/` for Codex-native skill definitions.

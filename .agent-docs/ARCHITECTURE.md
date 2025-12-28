@@ -18,6 +18,7 @@ governance, proof-driven development, and living architecture maps.
 - Auto-Context: task-scoped continuity for long runs.
 - Action Ledger: auditable record of changes and evidence.
 - Pattern Mining: extract recurring operations into automation proposals.
+- Agent Lifecycle: auto-managed agent registry, proposals, and drift checks.
 - ExecPlan: structured planning for long or risky tasks.
 - Quality Gates: explicit Definition of Done checks.
 - Size Guard: line budgets for context-heavy files.
@@ -40,6 +41,9 @@ governance, proof-driven development, and living architecture maps.
 - `.agent-docs/memory/DECISIONS.md`: ADR log.
 - `.agent-docs/memory/ACTION_LOG.md`: action ledger (human).
 - `.agent-docs/memory/ACTION_LOG.jsonl`: action ledger (machine).
+- `.agent-docs/memory/AGENTS_REGISTRY.md`: agent registry (human).
+- `.agent-docs/memory/AGENTS_REGISTRY.json`: agent registry (machine).
+- `.agent-docs/memory/AGENT_PROPOSALS.md`: proposed agents queue.
 - `.agent-docs/memory/PATTERNS.md`: mined automation patterns.
 - `.agent-docs/memory/COMMANDS.md`: best-known commands.
 - `.agent-docs/memory/COMMANDS.json`: machine commands.
@@ -54,7 +58,9 @@ governance, proof-driven development, and living architecture maps.
 - `.agent-docs/memory/SKILLS_STATUS.md`: skill audit log.
 - `.agent-docs/memory/USER_PREFERENCES.md`: response style preference.
 - `.agent-docs/memory/AUTONOMY_MODE.md`: auto-run installer status.
+- `.agent-docs/memory/KIT_VERSION.md`: kit version metadata.
 - `.agent-docs/auto-context/AUTO_CONTEXT.md`: task-scoped context log.
+- `.agent-docs/agents/AGENT_TEMPLATE.md`: agent scaffold template.
 - `.agent-docs/skills/*.md`: skill playbooks for specialized behaviors.
 - `.codex/skills/*/SKILL.md`: Codex-native skill definitions.
 
@@ -65,22 +71,23 @@ governance, proof-driven development, and living architecture maps.
 4. Autonomy Kickoff runs the full bootstrap with minimal questions.
 5. `analyze_repo_capabilities` scans for existing tooling and patterns.
 6. Repo Indexer builds `INDEX.md` and `INDEX.json`.
-7. The Cartographer maps entrypoints, components, and flows.
-8. Impact Analyzer documents risk in `IMPACT.md` for planned changes.
-9. Refactor Gate asks whether to start refactoring after mapping.
-10. Clarify First asks only when blocked or high-risk.
-11. The Trust Layer enforces TDD, then uses auto-debug on failures.
-12. The Command Guard checks `.agentpolicy` before running commands.
-13. The Safety Layer validates that no forbidden paths were touched.
-14. Action Ledger records changes and verification evidence.
-15. Decision Memory captures major architectural changes in ADRs.
-16. Auto-context maintains state for long runs and rotates per task.
-17. Handoff Writer captures compact state for session continuity.
-18. Backlog Curator records gaps and follow-ups.
-19. Pattern Mining proposes automations for future runs.
-20. Size Guard enforces line budgets and rotations.
-21. Skills Auditor validates skill installation.
-22. Quality Gates validate Definition of Done.
+7. Agent Manager refreshes agent registry and proposals.
+8. The Cartographer maps entrypoints, components, and flows.
+9. Impact Analyzer documents risk in `IMPACT.md` for planned changes.
+10. Refactor Gate asks whether to start refactoring after mapping.
+11. Clarify First asks only when blocked or high-risk.
+12. The Trust Layer enforces TDD, then uses auto-debug on failures.
+13. The Command Guard checks `.agentpolicy` before running commands.
+14. The Safety Layer validates that no forbidden paths were touched.
+15. Action Ledger records changes and verification evidence.
+16. Decision Memory captures major architectural changes in ADRs.
+17. Auto-context maintains state for long runs and rotates per task.
+18. Handoff Writer captures compact state for session continuity.
+19. Backlog Curator records gaps and follow-ups.
+20. Pattern Mining proposes automations for future runs.
+21. Size Guard enforces line budgets and rotations.
+22. Skills Auditor validates skill installation.
+23. Quality Gates validate Definition of Done.
 
 ## Safety Layer
 - `.agentignore` defines protected files and directories.

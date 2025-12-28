@@ -10,11 +10,15 @@ Fill in the commands that apply.
 - build:
 - security:
 - ui_smoke:
+- architecture_map:
+- agent_registry:
 
 ## Definition of Done
 - All required checks pass.
 - Safety validation completed (`.agentignore`, `.agentpolicy`).
 - Action Log updated with evidence.
+- Architecture maps updated when changes affect entrypoints or flows.
+- Agent registry refreshed when agent scope changes.
 
 ## Notes
 - If a check is not applicable, set it to "N/A".

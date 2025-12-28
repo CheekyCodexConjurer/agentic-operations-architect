@@ -38,10 +38,25 @@ files:
     max_lines: 200
     rotate: true
     archive_pattern: "SKILLS_STATUS_<timestamp>.md"
+  ".agent-docs/memory/AGENTS_REGISTRY.md":
+    max_lines: 300
+    rotate: true
+    archive_pattern: "AGENTS_REGISTRY_<timestamp>.md"
+  ".agent-docs/memory/AGENTS_REGISTRY.json":
+    max_lines: 300
+    rotate: true
+    archive_pattern: "AGENTS_REGISTRY_<timestamp>.json"
+  ".agent-docs/memory/AGENT_PROPOSALS.md":
+    max_lines: 200
+    rotate: true
+    archive_pattern: "AGENT_PROPOSALS_<timestamp>.md"
   ".agent-docs/memory/USER_PREFERENCES.md":
     max_lines: 100
     rotate: false
   ".agent-docs/memory/AUTONOMY_MODE.md":
+    max_lines: 50
+    rotate: false
+  ".agent-docs/memory/KIT_VERSION.md":
     max_lines: 50
     rotate: false
   ".agent-docs/architecture/flow-map.md":

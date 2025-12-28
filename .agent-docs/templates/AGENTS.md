@@ -18,6 +18,12 @@ optimized for long-running work.
 - Avoid overloading a single file; link to guides instead.
 - Stay under instruction size limits to avoid truncation (default 32KiB).
 
+## Agent Lifecycle Management
+- Run `agent_manager` at session start and after major structural changes.
+- Maintain `.agent-docs/memory/AGENTS_REGISTRY.md` and `.agent-docs/memory/AGENTS_REGISTRY.json`.
+- Propose new agents with objective, scope, and target path in `AGENT_PROPOSALS.md`.
+- Treat fixed agents as read-only; only propose updates.
+
 ## Context Economy
 - Prefer index files that link to detailed docs.
 - Load only the files needed for the current task.
@@ -102,6 +108,7 @@ Simulation -> Run -> Self-Correct Loop
 - Document critical flows and side effects.
 - Record confidence levels and unknowns.
 - Keep `ARCHITECTURE.md` and `.agent-docs/architecture.md` as index-only.
+- When structural changes land, run `update_architecture`.
 
 ## Safety Layer
 - Respect `.agentignore` forbidden zones without exception.
